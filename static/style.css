@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                url("/static/background.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    height: 100vh;
+    color: white;
+    font-family: Arial, sans-serif;
+
+    /* smooth zoom animation */
+    animation: zoomBg 20s infinite alternate;
+}
+
+
+@keyframes zoomBg {
+    from { background-size: 100%; }
+    to { background-size: 110%; }
+}
+
+
+.navbar {
+    background: rgba(0, 0, 0, 0.7) !important;
+    backdrop-filter: blur(10px);
+}
+
+
+body {
+    padding-top: 70px;
+}
+
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 0 0 10px rgba(255,255,255,0.6);
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(12px);
+
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+
+th {
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 12px;
+    text-align: left;
+}
+
+
+td {
+    background: transparent;   /* removes white */
+    color: white;
+    padding: 12px;
+}
+
+
+tr:hover {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+
+tr {
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+
+form {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+
+    color: white;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+
+input {
+    border-radius: 8px !important;
+}
+
+
+.btn {
+    border-radius: 20px;
+}
+
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+}
+
+.btn-warning {
+    color: black;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+}
